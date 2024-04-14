@@ -1,0 +1,220 @@
+button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #06f4e4;
+  color: black;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: .6s;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+button:hover {
+color: #06f4e4;
+cursor: pointer;
+}
+
+button::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+background-color: black;
+width: 0;
+height: 100%;
+z-index: -1;
+transition: .4s;
+}
+
+button:hover::before {
+width: 100%;
+}
+.search-container {
+  position: relative;
+  margin: 20px;
+}
+.search-container input{
+  padding: 5px;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+}
+
+/* HomePage.css */
+.homepage {
+  position: relative;
+}
+
+.notes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Add this CSS to your stylesheet */
+.filter-container {
+  position: absolute;
+  top: 0;
+  right: 20px; /* Adjust the value as needed */
+}
+
+.filter-input {
+  width: 150px; /* Adjust the width as needed */
+}
+
+/* Note.css */
+.note {
+  border: 2px solid black;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  width: 300px;
+  height: auto;
+}
+.note img {
+  max-width: 100%;
+  height: auto;
+}
+
+.note-details {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(233, 15, 15);
+  color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+.note-details img{
+  padding: 10px;
+  height: 200px;
+}
+.note-details button {
+  margin: 10px auto; 
+  padding: 10px;
+  width: 50%; 
+  display: block;
+}
+/* NoteForm.css */
+.note-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(90.21deg, #AA367C 111.58%, #4A2FBD -5.91%);
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 30vw;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.note-form input,
+.note-form textarea {
+  padding: 10px;
+  display: block;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+}
+
+
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #040404;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust height as needed */
+}
+
+/* Style for the form container */
+.form-container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Style for form heading */
+.login-signup-heading {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Style for form fields */
+.login-signup-form input {
+  width: 90%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style for submit button */
+.login-signup-form button {
+  width: 95%;
+  padding: 10px;
+  background-color: #AA367C;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for toggle button */
+.toggle-button {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Style for toggle button text */
+.toggle-button span {
+  color: #AA367C;
+  cursor: pointer;
+}
+
+.ql-editor {
+  padding: 10px;
+  min-height: 150px; /* Adjust the minimum height as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.ql-toolbar {
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.ql-tooltip-editor {
+  max-width: 300px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
