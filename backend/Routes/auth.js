@@ -88,17 +88,4 @@ router.post('/login', [
         }
     })
 
-//get user details:login required
-router.get('/getdata', fetchuser, async (req, res) => {
-    try {
-        const user = await User.find({access:'user'}).select("-password")
-        res.json(user)
-
-    }
-    catch (error) {
-        console.log(error.message)
-        res.status(500).json('Some error occurred')
-    }
-})
-
 module.exports = router
