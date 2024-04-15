@@ -58,15 +58,15 @@ width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
-/* Add this CSS to your stylesheet */
+
 .filter-container {
   position: absolute;
   top: 0;
-  right: 20px; /* Adjust the value as needed */
+  right: 20px;
 }
 
 .filter-input {
-  width: 150px; /* Adjust the width as needed */
+  width: 150px; 
 }
 
 /* Note.css */
@@ -151,7 +151,7 @@ width: 100%;
   height: 100vh; /* Adjust height as needed */
 }
 
-/* Style for the form container */
+
 .form-container {
   width: 400px;
   padding: 20px;
@@ -160,13 +160,12 @@ width: 100%;
   background-color: #f9f9f9;
 }
 
-/* Style for form heading */
+
 .login-signup-heading {
   margin-bottom: 20px;
   text-align: center;
 }
 
-/* Style for form fields */
 .login-signup-form input {
   width: 90%;
   margin-bottom: 10px;
@@ -175,7 +174,6 @@ width: 100%;
   border-radius: 5px;
 }
 
-/* Style for submit button */
 .login-signup-form button {
   width: 95%;
   padding: 10px;
@@ -186,14 +184,12 @@ width: 100%;
   cursor: pointer;
 }
 
-/* Style for toggle button */
 .toggle-button {
   margin-top: 10px;
   text-align: center;
   font-size: 14px;
 }
 
-/* Style for toggle button text */
 .toggle-button span {
   color: #AA367C;
   cursor: pointer;
@@ -201,8 +197,8 @@ width: 100%;
 
 .ql-editor {
   padding: 10px;
-  min-height: 150px; /* Adjust the minimum height as needed */
-  font-size: 16px; /* Adjust font size as needed */
+  min-height: 150px;
+  font-size: 16px; 
 }
 
 .ql-toolbar {
