@@ -11,7 +11,6 @@ const NoteForm = ({ onSubmit, onClose }) => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    // Validate form fields
     if (title.trim() !== '' && description.trim() !== '') {
       const formData = { title, description, image, video };
       try {
@@ -56,16 +55,15 @@ const NoteForm = ({ onSubmit, onClose }) => {
     const editorElement = editorRef.current?.editor?.root;
     if (editorElement) {
       const observer = new MutationObserver(() => {
-        // Handle DOM changes here
       });
   
       observer.observe(editorElement, {
-        childList: true, // Observing child nodes being added or removed
-        subtree: true, // Observing the entire subtree
+        childList: true,
+        subtree: true, 
       });
   
       return () => {
-        observer.disconnect(); // Clean up the observer on component unmount
+        observer.disconnect();
       };
     }
   }, []);
