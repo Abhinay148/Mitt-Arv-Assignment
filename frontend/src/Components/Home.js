@@ -56,7 +56,6 @@ const Home = () => {
   const filteredAndSortedNotes = () => {
     let filteredNotes = notes;
 
-    // Filter notes based on search query
     if (filterOption === '' && searchQuery !== '') {
       filteredNotes = notes.filter(note =>
         note.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -80,7 +79,6 @@ const Home = () => {
 
   return (
     <div className="homepage">
-      {/* Search bar */}
       <div className="search-container">
         <input
           type="text"
@@ -90,7 +88,6 @@ const Home = () => {
           className="search-input"
         />
       </div>
-      {/* Filter dropdown */}
       <div className="filter-container">
         <select
           value={filterOption}
@@ -103,16 +100,12 @@ const Home = () => {
         </select>
       </div>
       <div className="notes-container">
-        {/* Render filtered and sorted notes */}
         {filteredAndSortedNotes().map((note, index) => (
           <Note key={index} note={note} onClick={() => handleNoteClick(note)} />
         ))}
       </div>
-      {/* Render selected note details */}
       {selectedNote && <NoteDetails note={selectedNote} onClose={() => setSelectedNote(null)} />}
-      {/* Render note form */}
       {showForm && <NoteForm onSubmit={handleAddNote} onClose={() => setShowForm(false)} />}
-      {/* Render floating button */}
       <FloatingButton onClick={() => setShowForm(true)} />
     </div>
   );
